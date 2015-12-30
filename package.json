@@ -1,0 +1,27 @@
+{
+  "name": "mma",
+  "version": "1.0.0",
+  "description": "get mma fighter names",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alfapagal/MMA.git"
+  },
+  "keywords": [
+    "MMA",
+    "UFC",
+    "fight"
+  ],
+  "author": "suvrajyoti <alfapagal@gmail.com> (http://suvrajyoti.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alfapagal/MMA/issues"
+  },
+  "homepage": "https://github.com/alfapagal/MMA#readme",
+  "dependencies": {
+    "unique-random-array": "1.0.0"
+  }
+}
