@@ -19,3 +19,15 @@ describe('random', function(){
         expect(mma.all).to.include(fighter);
     });
 });
+
+describe('random(n)', function(){
+    it('should return n random fighters', function(){
+       var fighters = mma.random(3);
+        expect(fighters).to.satisfy(arrayOfFighters);
+        function arrayOfFighters(fighters){
+            return (fighters.every(function(fighter){
+                return (mma.all.indexOf(fighter) != -1)
+            }) && fighters.length == 3);
+        }
+    });
+});
