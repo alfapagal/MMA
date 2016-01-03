@@ -1,4 +1,4 @@
-var mma = require('./fighters.json');
+var mma = require('./fighters.js');
 var random = require('unique-random-array');
 module.exports = {
     all : mma,
