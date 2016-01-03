@@ -1,14 +1,15 @@
 {
   "name": "mma_test",
-  "version": "1.1.0",
   "description": "get mma fighter names",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "commit": "git-cz",
+    "test": "mocha src/index.test.js -w",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alfapagal/MMA.git"
+    "url": "https://github.com/alfapagal/MMA.git"
   },
   "keywords": [
     "MMA",
@@ -23,5 +24,16 @@
   "homepage": "https://github.com/alfapagal/MMA#readme",
   "dependencies": {
     "unique-random-array": "1.0.0"
+  },
+  "devDependencies": {
+    "chai": "3.4.1",
+    "commitizen": "2.4.6",
+    "cz-conventional-changelog": "1.1.5",
+    "mocha": "2.3.4",
+    "semantic-release": "^4.3.5"
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
   }
 }
+
