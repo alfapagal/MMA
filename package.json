@@ -2,9 +2,10 @@
   "name": "mma_test",
   "description": "get mma fighter names",
   "main": "src/index.js",
+  "version": "0.0.0-semantic-release",
   "scripts": {
     "commit": "git-cz",
-    "test": "mocha src/index.test.js",
+    "test": "mocha src/index.test.js -w",
     "test:single": "mocha src/index.test.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
@@ -29,12 +30,15 @@
   "devDependencies": {
     "chai": "3.4.1",
     "commitizen": "2.4.6",
+    "condition-circle": "1.2.0",
     "cz-conventional-changelog": "1.1.5",
     "mocha": "2.3.4",
     "semantic-release": "^4.3.5"
   },
   "czConfig": {
     "path": "node_modules/cz-conventional-changelog"
+  },
+  "release": {
+    "verifyConditions": "condition-circle"
   }
 }
-
