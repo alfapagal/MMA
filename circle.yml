@@ -2,4 +2,5 @@ test:
   override:
     - npm run test:single
   post:
+    - npm run report-coverage
     - npm run semantic-release || true
